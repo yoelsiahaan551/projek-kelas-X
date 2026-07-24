@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil | Tokaz.store</title>
+  <link rel="icon" type="image/png" href="../image/gambar3.png" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="../../dist/output.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 text-gray-800 py-10 px-8 flex justify-center relative min-h-screen">
+
+  <img src="../image/gambar1.png" alt="Background" class="absolute top-0 left-0 w-full h-full object-cover opacity-10 -z-10" />
+
+  <div class="bg-white shadow-xl rounded-2xl w-full max-w-4xl p-8 space-y-6 my-10">
+
+    <!-- Header -->
+    <div class="flex items-center gap-4">
+      <button onclick="history.back()" class="text-gray-600 hover:text-black">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <div class="flex flex-col items-center text-center w-full">
+        <div class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mb-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-500" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5.121 17.804A7.97 7.97 0 0012 20a7.97 7.97 0 006.879-2.196M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <h2 class="text-lg font-bold" id="displayName">Yoel Siahaan</h2>
+        <span class="text-sm text-gray-500">Pengguna Terverifikasi</span>
+      </div>
+    </div>
+
+    <!-- Form Profil -->
+    <form id="form-profil" class="space-y-4">
+
+      <div>
+        <label for="username" class="text-gray-500">Username</label>
+        <input type="text" id="username" name="username" class="w-full border border-gray-300 rounded-md px-3 py-2" value="@yoelsiahaan" />
+      </div>
+
+      <div>
+        <label for="email" class="text-gray-500">Email</label>
+        <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-md px-3 py-2" value="yoelsiahaan@gmail.com" />
+      </div>
+
+      <div>
+        <label for="nama" class="text-gray-500">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" class="w-full border border-gray-300 rounded-md px-3 py-2" value="Yoel Siahaan" />
+      </div>
+
+      <div>
+        <label for="tanggal" class="text-gray-500">Tanggal Lahir</label>
+        <input type="text" id="tanggal" name="tanggal" placeholder="YYYY-MM-DD" class="w-full border border-gray-300 rounded-md px-3 py-2" value="2007-05-25" />
+      </div>
+
+      <div>
+        <label for="phone" class="text-gray-500">Phone</label>
+        <input type="text" id="phone" name="phone" class="w-full border border-gray-300 rounded-md px-3 py-2" value="(269)-748-9822" />
+      </div>
+
+      <div>
+        <label for="gender" class="text-gray-500">Jenis Kelamin</label>
+        <select id="gender" name="gender" class="w-full border border-gray-300 rounded-md px-3 py-2">
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="alamat" class="text-gray-500">Alamat</label>
+        <input type="text" id="alamat" name="alamat" class="w-full border border-gray-300 rounded-md px-3 py-2" value="JAWA BARAT" />
+      </div>
+      <div class="flex justify-between items-center mt-6">
+        <button type="button" id="ubahButton" class="px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">
+          Ubah
+        </button>
+        <button type="submit" id="simpanButton" class="px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700" disabled>
+          Simpan Perubahan
+        </button>
+        <button id="logout" type="button" class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15 12H3m0 0l3.5-3.5M3 12l3.5 3.5m6.5-9v-1a2 2 0 012-2h3a2 2 0 012 2v14a2 2 0 01-2 2h-3a2 2 0 01-2-2v-1" />
+          </svg>
+          Logout
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+    <script src="../homejs/profil.js"></script>
+    <script src="../landing page/landingpage.html"></script>
+  <script src="../js/profil.js"></script>
+</body>
+</html>

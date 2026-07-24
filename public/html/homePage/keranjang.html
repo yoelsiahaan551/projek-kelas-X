@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Keranjang | Tokaz.store</title>
+  <link rel="icon" type="image/png" href="../image/gambar3.png" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <nav class="bg-white shadow border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="../image/gambar3.png" class="h-8" alt="Tokaz.store Logo" />
+        <span class="text-2xl font-bold">Tokaz.store</span>
+      </div>
+      <a href="beranda.html" class="text-blue-600 hover:underline font-medium">
+        ← Kembali ke Beranda
+      </a>
+    </div>
+  </nav>
+
+  <section class="w-full max-w-7xl mx-auto mt-10 px-6">
+    <h1 class="text-3xl font-bold mb-6">Keranjang Belanja</h1>
+
+    <div class="flex items-center mb-4">
+      <input type="checkbox" id="select-all" class="w-5 h-5 mr-2" />
+      <label for="select-all" class="text-gray-700 font-medium">Pilih Semua</label>
+    </div>
+
+    <div id="cart-container" class="space-y-6">
+    </div>
+
+    <div class="mt-8 text-right space-y-4">
+      <p class="text-xl font-semibold">
+        Total Harga: <span id="total-price">Rp 0</span>
+      </p>
+
+      <button id="btn-beli" class="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded">
+        Beli Sekarang
+      </button>
+    </div>
+  </section>
+
+<section>
+           <div class="bg-white w-full mt-10 shadow-md">
+               <div class="w-full max-w-7xl mx-auto">
+                 <div class="p-4 h- shadow-md">
+                 <h1 class="font-bold text-2xl">Untuk anda</h1>
+          </div>
+        <div id="produkApi" class="flex py-6 flex-wrap px-0 gap-2 ml-4 w-full "></div>
+  </div>
+</div>  
+
+  <script src="../js/produk.js"></script>
+  <script src="../homejs/keranjang.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
+

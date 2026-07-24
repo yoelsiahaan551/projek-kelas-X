@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detail Produk | Tokaz.store</title>
+  <link rel="icon" type="image/png" href="../image/gambar3.png" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Tombol Logo Back -->
+  <div class="max-w-5xl mx-auto px-6 pt-6">
+    <button 
+  onclick="if (document.referrer) { history.back(); } else { window.location.href = '../homePage/beranda.html' }" 
+  class="flex items-center space-x-2"
+>
+  <img src="../image/gambar10.png" alt="Kembali" class="h-6 w-6" />
+  <span class="text-gray-800 text-lg font-semibold">Kembali</span>
+</button>
+
+  </div>
+
+  <main class="max-w-5xl mx-auto px-6 py-4 space-y-12 animate-fadeIn">
+
+    <section class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <div class="flex justify-center items-center">
+        <img 
+          id="product-image" 
+          src="" 
+          alt="Gambar Produk" 
+          class="w-full max-w-md max-h-[450px] object-contain rounded-xl bg-gray-50 p-6 shadow-inner transition-transform duration-300 hover:scale-105" 
+        />
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <h1 id="product-title" class="text-4xl font-bold text-gray-900 mb-3">Judul Produk</h1>
+        <p id="product-category" class="text-sm text-blue-600 uppercase tracking-wider font-medium mb-3">Kategori Produk</p>
+        <p id="product-description" class="text-gray-600 leading-relaxed mb-6 text-justify">Deskripsi lengkap produk.</p>
+        <p id="product-price" class="text-3xl font-bold text-emerald-600 mb-8">Rp 0</p>
+      </div>
+    </section>
+
+    <button 
+      id="buy-button"
+      type="button" 
+      class="w-full py-3 text-lg font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200"
+    >
+      Pesan sekarang
+    </button>
+
+    <section>
+      <div class="bg-white w-full mt-10 shadow-md">
+        <div class="w-full max-w-7xl mx-auto">
+          <div class="p-4 shadow-md">
+            <h1 class="font-bold text-2xl">Untuk anda</h1>
+          </div>
+          <div id="produkApi" class="flex py-6 flex-wrap px-0 gap-2 ml-4 w-full "></div>
+        </div>
+      </div>  
+    </section>
+
+  </main>
+
+  <script src="../js/Api.js"></script>
+  <script src="../js/detail.js"></script>
+  <script src="../homejs/detail.js"></script>
+  <script src="../js/produk.js"></script>
+  <script src="../homejs/keranjang.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda | Tokaz.store</title>
+  <link rel="icon" type="image/png" href="../image/gambar3.png" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-white shadow-md">
+  <div class="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
+    <input type="text" id="searchInput" class="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Cari produk..."/>
+  </div>
+</div>
+
+<nav class="bg-white border-gray-200">
+  <div class="max-w-screen-xl mx-auto p-4 flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <img src="../image/gambar3.png" class="h-8" alt="Logo" />
+      <span class="text-2xl font-semibold whitespace-nowrap text-gray-900">Tokaz.store</span>
+    </div>
+    <div class="flex items-center space-x-6">
+      <div class="hidden md:block" id="navbar-default">
+        <ul class="font-medium flex space-x-8">
+          <li><a href="#kategori" class="text-gray-900 hover:text-blue-700">Kategori</a></li>
+          <li><a href="#produk" class="text-gray-900 hover:text-blue-700">Produk</a></li>
+          <li><a href="#rekomendasi" class="text-gray-900 hover:text-blue-700">Rekomendasi</a></li>
+          <li><a href="#footer" class="text-gray-900 hover:text-blue-700">Hubungi kami</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="keranjang.html"><img src="../image/gambar2.png" alt="Keranjang" class="w-6 h-6" /></a>
+        <a href="profil.html"><img src="../image/gambar5.png" alt="Profil" class="w-6 h-6" /></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="relative bg-700 bg-blend-multiply">
+  <div class="absolute inset-0 z-0 flex justify-center">
+    <div class="relative max-w-screen-xl w-full">
+      <img src="../image/gambar7.png" alt="Background Image" class="w-full h-full object-cover rounded-lg">
+      <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+    </div>
+  </div>
+  <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 relative z-10">
+  </div>
+</section>
+
+<section>
+  <div class="bg-white w-full mt-10 shadow-md">
+    <div class="w-full max-w-7xl mx-auto">
+      <div class="p-4">
+        <h1 class="font-bold text-2xl">Kategori Populer</h1>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-4 py-6">
+        <div class="flex items-center gap-3 bg-blue-100 px-4 py-3 rounded-lg shadow-sm">
+          <span class="inline-block bg-blue-300 p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18v18H3z" />
+            </svg>
+          </span>
+          <p class="font-medium text-gray-700">Laptop</p>
+        </div>
+        <div class="flex items-center gap-3 bg-blue-100 px-4 py-3 rounded-lg shadow-sm">
+          <span class="inline-block bg-blue-300 p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l-4-4m0 0l4-4m-4 4h16" />
+            </svg>
+          </span>
+          <p class="font-medium text-gray-700">Pakaian</p>
+        </div>
+        <div class="flex items-center gap-3 bg-green-100 px-4 py-3 rounded-lg shadow-sm">
+          <span class="inline-block bg-green-300 p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18v18H3z" />
+            </svg>
+          </span>
+          <p class="font-medium text-gray-700">Handphone</p>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 px-4 py-3 rounded-lg shadow-sm">
+          <span class="inline-block bg-gray-300 p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2-2-2m4 0l-2 2 2 2m-4 6a9 9 0 1118 0H4" />
+            </svg>
+          </span>
+          <p class="font-medium text-gray-700">alat</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="produk" class="bg-white w-full mt-10 shadow-md">
+  <div class="w-full max-w-7xl mx-auto">
+    <div class="p-4">
+      <h1 class="font-bold text-2xl">Produk Terlaris</h1>
+    </div>
+    <div id="terlarisApi" class="flex py-6 flex-wrap px-0 gap-2 ml-4 w-full"></div>
+  </div>
+</section>
+
+<section id="rekomendasi" class="bg-white w-full mt-10 shadow-md">
+  <div class="w-full max-w-7xl mx-auto">
+    <div class="p-4 text-center">
+      <h1 class="font-bold text-2xl">Rekomendasi</h1>
+    </div>
+    <div id="produkApi" class="flex py-6 flex-wrap justify-center gap-2 px-4 w-full"></div>
+  </div>
+</section>
+
+<footer id="footer" class="bg-white dark:bg-gray-900 mt-10">
+  <div class="mx-auto w-full max-w-screen-xl p-6 lg:p-8">
+    <div class="md:flex md:justify-between md:items-start">
+      <div class="mb-8 md:mb-0 md:w-1/3">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Tokaz Store</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-medium">Pusat belanja online terpercaya</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 md:w-2/3">
+
+        <div>
+          <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Informasi</h3>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4"><a href="#" class="hover:underline">Tentang Kami</a></li>
+            <li><a href="#" class="hover:underline">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-200 dark:border-gray-700" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 Tokaz Store™</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/produk.js"></script>
+<script src="../js/kategori.js"></script>
+<script src="../js/terlaris.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="../js/detailProduk.js"></script>
+
+</body>
+</html>

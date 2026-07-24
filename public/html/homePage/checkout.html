@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>checkout | Tokaz.store</title>
+  <link rel="icon" type="image/png" href="../image/gambar3.png" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <main class="min-h-screen flex items-center justify-center p-6">
+    <section class="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 w-full max-w-6xl">
+      
+      <!-- Judul -->
+      <h1 class="text-3xl md:text-4xl font-bold mb-10 text-center text-emerald-600">
+        Informasi Pengiriman & Pembayaran
+      </h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <form id="checkout-form" class="space-y-6">
+          <div>
+            <label for="input-nama" class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap <span class="text-red-500">*</span></label>
+            <input id="input-nama" type="text" placeholder="Masukkan nama lengkap Anda" class="border border-gray-300 rounded-lg px-5 py-3 w-full focus:outline-none focus:ring-2 focus:ring-emerald-500" required />
+          </div>
+
+          <div>
+            <label for="input-email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input id="input-email" type="email" placeholder="contoh@email.com" class="border border-gray-300 rounded-lg px-5 py-3 w-full focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+          </div>
+
+          <div>
+            <label for="input-telepon" class="block text-sm font-medium text-gray-700 mb-1">Nomor Telepon <span class="text-red-500">*</span></label>
+            <input id="input-telepon" type="tel" placeholder="0812xxxxxxx" pattern="[0-9]{10,13}" class="border border-gray-300 rounded-lg px-5 py-3 w-full focus:outline-none focus:ring-2 focus:ring-emerald-500" required />
+          </div>
+
+          <div>
+            <label for="input-alamat" class="block text-sm font-medium text-gray-700 mb-1">Alamat Lengkap <span class="text-red-500">*</span></label>
+            <textarea id="input-alamat" placeholder="Contoh: Jl. Merdeka No. 10, Jakarta" rows="4" class="border border-gray-300 rounded-lg px-5 py-3 w-full resize-none focus:outline-none focus:ring-2 focus:ring-emerald-500" required></textarea>
+          </div>
+
+          <div>
+            <h2 class="text-lg font-semibold mb-3 text-gray-800">Metode Pembayaran</h2>
+            <div class="space-y-2">
+              <label class="flex items-center gap-3">
+                <input type="radio" name="payment-method" value="transfer" class="text-emerald-600" checked />
+                <span>Transfer Bank</span>
+              </label>
+              <label class="flex items-center gap-3">
+                <input type="radio" name="payment-method" value="cod" class="text-emerald-600" />
+                <span>Cash On Delivery (COD)</span>
+              </label>
+              <label class="flex items-center gap-3">
+                <input type="radio" name="payment-method" value="ewallet" class="text-emerald-600" />
+                <span>E-wallet (OVO, GoPay, Dana)</span>
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm space-y-5">
+          <h2 class="text-xl font-semibold text-gray-700 mb-4">Ringkasan Pesanan</h2>
+
+          <div class="space-y-4 max-h-60 overflow-y-auto pr-2" id="cart-summary">
+          </div>
+
+          <div class="border-t pt-4">
+            <div class="flex justify-between text-lg font-bold">
+              <span>Total Bayar</span>
+              <span id="total-price">Rp 0</span>
+            </div>
+          </div>
+
+          <button id="btn-back" class="w-full py-3 mt-3 text-lg font-semibold bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 transition duration-200">
+           Kembali ke Beranda
+          </button>
+
+
+          <button id="buy-button" type="button" class="w-full py-3 text-lg font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200">
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../homejs/checkout.js"></script>
+</body>
+</html>
